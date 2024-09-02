@@ -39,9 +39,9 @@ li{
     flex-grow: 1;
 }
 
-body{
-    background-color: rgb(198, 255, 255);
-}
+/* body{
+     background-color: rgb(198, 255, 255); 
+} */
 
 #level{
     border-color: rgb(69, 139, 136);
