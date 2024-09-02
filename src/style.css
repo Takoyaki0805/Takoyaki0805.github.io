@@ -1,0 +1,59 @@
+html{
+    font-family: 'lineseed';
+    font-size: large;
+}
+
+div:not(.main,.side){
+    border: solid;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    flex-grow: 1;
+}
+
+aside{
+    top: 0px;
+    position: sticky;
+    width: 120px;
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+    margin-right: 10px;
+    height: 100vh;
+}
+
+li{
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.side{
+    display: flex;
+    flex-grow: 1;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+body{
+    background-color: rgb(198, 255, 255);
+}
+
+#level{
+    border-color: rgb(69, 139, 136);
+    border-style: dotted;
+}
+
+header{
+    border: solid;
+    background-color: white;
+}
+
+@font-face {
+    font-family: 'lineseed';
+    src: url("LINE_Seed_JP/Web/WOFF2/LINESeedJP_OTF_Rg.woff2");
+}
