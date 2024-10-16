@@ -10,6 +10,29 @@ html{
     text-align: center;
 }
 
+aside{
+    top: 0px;
+    position: sticky;
+    width: 120px;
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+    margin-right: 10px;
+    height: 100vh;
+}
+
+.side{
+    display: flex;
+}
+
+.main{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 0px;
+    left: 150px;
+    width: calc(90% - 150px);
+}
+
 @font-face {
     font-family: 'lineseed';
     src: url("LINE_Seed_JP/Web/WOFF2/LINESeedJP_OTF_Rg.woff2");
