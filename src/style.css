@@ -57,3 +57,9 @@ header{
     font-family: 'lineseed';
     src: url("LINE_Seed_JP/Web/WOFF2/LINESeedJP_OTF_Rg.woff2");
 }
+
+@media (max-width: 1000px){
+    aside{
+        display: none;
+    }
+}

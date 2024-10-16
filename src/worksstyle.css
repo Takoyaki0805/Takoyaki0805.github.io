@@ -1,0 +1,16 @@
+html{
+    font-family: 'lineseed';
+    font-size: large;
+}
+
+#box{
+    border: dotted;
+    border-color: green;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'lineseed';
+    src: url("LINE_Seed_JP/Web/WOFF2/LINESeedJP_OTF_Rg.woff2");
+}
