@@ -27,6 +27,16 @@ function data(e){
             $('#appeal').html("JFrameの要素を使って掛け金などを実装した。<br>クラスの概念に極力気を使った");
             $('#comment').html("<a href='https://github.com/Takoyaki0805/BlackJack'>ソースコードはこちらから見られます。</a>");      
         break;
+        case "app3":
+            $("#name").html("ReflectBall"); 
+            $("#img").attr("src","src/app3.png");
+            $("#img").attr("width","40%");
+            $("#img").attr("height","40%");
+            $('#using').html("Unity");
+            $('#what').html("1週間でゲームを作成してみる"); 
+            $('#appeal').html("シンプルでシステムがわかりやすいゲーム");
+            $('#comment').html("期間が決まっていた中で作ったので素材などのクオリティが低くなってしまったが、完成形までもってこられたので、<br>短期集中でものを作る能力は身についたと感じた。");      
+        break;
         default:
             $("#name").html("支出表アプリ"); 
             $("#img").attr("src","src/app1.png");
