@@ -2,23 +2,20 @@ html{
     font-family: 'lineseed';
     font-size: large;
 }
-
 #box{
     border: dotted;
     border-color: green;
     background-color: lightgreen;
-    text-align: center;
+    /* text-align: center; */
 }
-
 aside{
     top: 0px;
     width: 120px;
     background-color: rgb(180, 180, 180);
-    text-align: center;
+    /* text-align: center; */
     margin-right: 10px;
     height: 100vh;
 }
-
 .side{
     display: flex;
     flex-direction: column;
@@ -32,7 +29,9 @@ aside{
     left: 150px;
     width: calc(90% - 150px);
 }
-
+#title{
+    text-align: center;
+}
 @font-face {
     font-family: 'lineseed';
     src: url("LINE_Seed_JP/Web/WOFF2/LINESeedJP_OTF_Rg.woff2");
