@@ -12,7 +12,6 @@ html{
 
 aside{
     top: 0px;
-    position: sticky;
     width: 120px;
     background-color: rgb(180, 180, 180);
     text-align: center;
@@ -22,8 +21,9 @@ aside{
 
 .side{
     display: flex;
-}
+    flex-direction: column;
 
+}
 .main{
     display: flex;
     position: absolute;
