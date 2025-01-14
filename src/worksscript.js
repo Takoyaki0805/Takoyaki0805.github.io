@@ -37,6 +37,16 @@ function data(e){
             $('#appeal').html("シンプルでシステムがわかりやすいゲーム");
             $('#comment').html("期間が決まっていた中で作ったので素材などのクオリティが低くなってしまったが、完成形までもってこられたので、<br>短期集中でものを作る能力は身についたと感じた。");      
         break;
+        case "app4":
+            $("#name").html("TankTankRevolutions"); 
+            $("#img").attr("src","src/app4.png");
+            $("#img").attr("width","40%");
+            $("#img").attr("height","40%");
+            $('#using').html("Unity");
+            $('#what').html("授業内で制作、オンラインゲームを作りたい"); 
+            $('#appeal').html("コントローラーやオンラインなど");
+            $('#comment').html("オンライン特有の問題が多く、解決するのに手間取ってしまった。");      
+        break;
         default:
             $("#name").html("支出表アプリ"); 
             $("#img").attr("src","src/app1.png");
