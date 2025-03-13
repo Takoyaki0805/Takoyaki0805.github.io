@@ -4,24 +4,31 @@
     <head>
         <title>北野柚希のポートフォリオ</title>
         <link rel="stylesheet" href="./src/style.css">
+        <script src="./src/jquery-3.7.1.min.js"></script>
     </head>
 
     <body>
         <div class="side">
             <aside id="menu">
                 <h2>menu</h2>
-                <li onclick="Moveskill()">
-                    My Skill
-                </li>
                 <li onclick="Movework()">
                     Work
+                </li>
+                <li onclick="Moveskill()">
+                    Skill
                 </li>
             </aside>
 
         <div class="main">
            <header><h1>北野柚希のポートフォリオ</h1></header>
-           <a href="works.html">作品集はこちら</a>
-            <h2 id="skill">My Skill</h2>
+
+           <h2 id="work">Work</h2>
+                <div id="work_content"> 
+                    <a class="Apps" href="./src/workpages/work_app01.html"><img class="thumbnail" src="src/TTR_ImageArt.jpg" width="346px"height="192px"></a>
+                    <a class="Apps" href="./src/workpages/work_app02.html"><img class="thumbnail" src="src/RB_ImageArt.png" width="346px"height="192px"></a>
+                </div>
+
+           <h2 id="skill">Skill</h2>
             <div>
                 <p><b>Programming</b></p>
 
@@ -48,20 +55,7 @@
                 <p>Unity</p>
             </div>
 
-            <h2 id="work">Work</h2>
-            <div>
-                <p>企業のExcelサポート(ボランティア)</p>
-                <p>Unity一週間ゲームジャム参加</p>
-                <a href="https://unityroom.com/games/reflectballfor1week">作品リンク</a>
-                <p>校内プログラミングコンテスト受賞(一部演出,メインプログラム担当)</p>
-                <a href="https://www.it-house.teikyo-u.ac.jp/wiki/index.php?%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%A5%B3%A5%F3%A5%C6%A5%B9%A5%C82022">記事リンク</a>
-                <a href="https://scratch.mit.edu/projects/757392614/">作品リンク</a>
-                <a href="works.html">その他作品はこちら</a>
-            </div>
-            <h2 id="contact">連絡先</h2>
-            <div>
-                <p>北野柚希 mail:22r3020234g@teikyo-u.ac.jp</p>
-            </div>
+
         </div>
         </div>
         <script src="./src/script.js"></script>

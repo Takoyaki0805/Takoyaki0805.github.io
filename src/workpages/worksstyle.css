@@ -1,0 +1,29 @@
+html{
+    font-family: 'lineseed';
+    font-size: large;
+}
+#box{
+    border: dotted;
+    border-color: green;
+    background-color: lightgreen;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+
+}
+.main{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+}
+#title{
+    text-align: center;
+}
+@font-face {
+    font-family: 'lineseed';
+    src: url("../LINE_Seed_JP/Web/WOFF2/LINESeedJP_OTF_Rg.woff2");
+}

@@ -3,7 +3,7 @@ html{
     font-size: large;
 }
 
-div:not(.main,.side){
+div:not(.main,.side,#work_content){
     border: solid;
     margin: 10px;
     padding: 5px;
@@ -12,7 +12,9 @@ div:not(.main,.side){
     flex-grow: 1;
 }
 
-aside{
+
+
+/* aside{
     top: 0px;
     position: sticky;
     width: 120px;
@@ -20,18 +22,40 @@ aside{
     text-align: center;
     margin-right: 10px;
     height: 100vh;
+} */
+
+aside{
+    display: grid;
+    grid-template-columns: 30vh 40vh 40vh;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.side{
+    display: grid;
+    grid-template-rows: 100px 1fr;
 }
 
 li{
     text-align: left;
-    padding: 10px;
-    font-size: 15px;
+    padding: 20px;
+    font-size: 28px;
+    text-decoration: underline gray;
+    /* display: flex; */
+    /* align-items: center; */
+    /* height: auto; */
+    /* line-height: ; */
 }
 
-.side{
+#work_content{
+    overflow-x: scroll;
+}
+
+/* .side{
     display: flex;
     flex-grow: 1;
-}
+} */
 
 .main{
     display: flex;
@@ -58,8 +82,70 @@ header{
     src: url("LINE_Seed_JP/Web/WOFF2/LINESeedJP_OTF_Rg.woff2");
 }
 
-@media (max-width: 1000px){
+/* @media (max-width: 1000px){
     aside{
         display: none;
     }
+} */
+
+@media (max-width: 1000px){
+    aside{
+        display: grid;
+        grid-template-rows: 15vh 10vh 10vh;
+        grid-template-columns: none;
+        position: sticky;
+        top: 0px;
+        height: min-content;
+    }
+
+    li{
+        /* text-align: left; */
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .side{
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: none;
+    }
 }
+
+.Apps {
+    position: relative;
+    overflow: hidden;
+  }
+  .Apps::before,
+  .Apps::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    margin: auto;
+    transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+    opacity: 0;
+  }
+  .Apps::before {
+    background: rgba(250,0,0,.6);
+    width: 100%;
+    height: 100%;
+  }
+  .Apps::after {
+    color: #fff;
+    content: "Read More";
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .Apps:hover::before,
+  .Apps:hover::after {
+    opacity: 1;
+  }
