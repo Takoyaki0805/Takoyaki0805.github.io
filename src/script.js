@@ -15,11 +15,9 @@ function Movework(){
 function Spotlight(event){
     // $(this).find("img").css("width","50%");
     // $(this).find("img").css("height","50%");
-    console.log("a");
 }
 
 function downlight(event){
     // $(this).find("img").css("width","40%");
     // $(this).find("img").css("height","40%");
-    console.log("a");
 }

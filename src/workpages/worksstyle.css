@@ -9,6 +9,9 @@ html{
     /* text-align: center; */
     margin: 0 auto;
 }
+#howto{
+    border: dashed;
+}
 .side{
     display: flex;
     flex-direction: column;

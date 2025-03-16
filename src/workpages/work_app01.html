@@ -10,16 +10,50 @@
             <div id="box">
                 <div id="title">
                     <h2 id="name">作品名:TankTankRevolutions</h2>
-                    <img id="img" src="../app4.png" width="40%" height="40%">
+                    <!-- <img id="img" src="../app4.png" width="40%" height="40%"> -->
+                    <video id="img" src="../TTR.mp4" width="40%" height="40%" autoplay muted controls>
+                </div>
+                <li>概要</li>
+                <div id="howto">
+                    <li>部屋名を入力し、部屋を作る。</li>
+                    <li>クライアント側は右のリストから入りたい部屋を選択し接続する</li>
+                    <li>両方とも接続完了しReadyボタンを押すとゲーム開始</li>
+                    <li>砲弾を発射するか地雷の爆風に当たるとHPが減っていき,0になるとゲームオーバー</li>
+                    <li>爆風は木製の壁のみ破壊できる。</li>
                 </div>
                 <li>作るのにつかったもの</li>
-                <p id="using">Unity</p>
-                <li>なんで作ったか</li>
-                <p id="what">授業内で制作,オンラインゲームを作りたい</p>
+                <p id="using">Unity,Netcode for GameObjects,Relay,Lobby</p>
+                <li>役割</li>
+                <p id="worker">
+                    メインプログラマー(ゲームシステム)
+                </p>
+                <li>なぜ作ったか</li>
+                <p id="what">
+                    授業内の課題で制作<br>
+                    現代のゲームの主流であるオンラインゲームを作りたい。<br>
+                    今までUnityで2Dミニゲームしか作ってなかったので3Dでゲームを制作してみたかった。
+                </p>
                 <li>工夫した点</li>
-                <p id="appeal">コントローラーやオンラインなど</p>
-                <li>ひとこと</li>
-                <p id="comment">オンライン特有の問題が多く、解決するのに手間取ってしまった。</p>
+                <p id="appeal">
+                    同期する要素を絞り込む事によりホスト側の処理を軽減させた。<br>
+                    コントローラーでの操作に対応させた事によってキーボードとコントローラー二種類の操作を対応させた。<br>
+                    RelayとLobbyを使うことにより同一回線上にコンピューターがなくてもオンラインプレイができて、部屋も複数立てることが可能。
+                </p>
+                <li>遊んでもらっての感想など</li>
+                <p id="comment">
+                    ゲーム内に操作説明が少なかったため、操作に手間取っている人が多かった。<br>
+                    遊んでもらった時点でデバックが甘かったので遊んでもらったときにバグが多く出てしまった。
+                </p>
+                <li>苦労した点</li>
+                <p id="point">
+                    Netcodeの仕様を理解して解決するのに手間取ってしまった。<br>
+                    オブジェクトの同期の設定やプレハブの生成、破棄をすべてホスト側で処理しなければならなかったで<br>
+                    少しプログラムが複雑になってしまった。
+                </p>
+                <li>関連リンク</li>
+                <p id="links">
+                    <a href="https://drive.google.com/file/d/1WLtdPVrWpMFjGPT_oG0VRLCIVenkGSD6/view?usp=sharing">実行ファイル</a>
+                </p>
             </div>
             <a href="../../index.html">トップページに戻る</a>  
         </div>
