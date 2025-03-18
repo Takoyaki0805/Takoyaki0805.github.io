@@ -3,7 +3,7 @@ html{
     font-size: large;
 }
 
-div:not(.main,.side,#work_content){
+div:not(.main,.side,#work_content,.arts){
     border: solid;
     margin: 10px;
     padding: 5px;
@@ -52,6 +52,12 @@ li{
 
 #work_content{
     overflow-x: scroll;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.art>p{
+    margin: 0 auto;
 }
 
 /* .side{
@@ -92,12 +98,13 @@ header{
 
 @media (max-width: 1000px){
     aside{
-        display: grid;
+        /* display: grid;
         grid-template-rows: 15vh 10vh 10vh;
         grid-template-columns: none;
         position: sticky;
         top: 0px;
-        height: min-content;
+        height: min-content; */
+        display: none;
     }
 
     li{
@@ -107,8 +114,8 @@ header{
     }
 
     .side{
-        display: grid;
-        grid-template-columns: 100px 1fr;
+        /* display: grid;
+        grid-template-columns: 100px 1fr; */
         grid-template-rows: none;
     }
 }
